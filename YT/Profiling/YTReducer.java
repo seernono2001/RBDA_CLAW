@@ -40,7 +40,6 @@ public class YTReducer extends Reducer<Text, Text, Text, Text> {
       uniqueVideoCount++;
       if (count > 1) {
         duplicateVideoCount++;
-        // Uncomment the line below to list every duplicate id:
         // context.write(new Text("video_id | duplicate"), new Text(k.substring(9) + "
         // (x" + count + ")"));
       }
